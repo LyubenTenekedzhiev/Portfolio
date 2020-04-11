@@ -1,0 +1,74 @@
+.WelcomeSection {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  grid-template-rows: auto;
+  height: 90vh;
+  margin: auto auto;
+}
+
+.WelcomeSectionDescription {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row: 1;
+  grid-auto-rows: min-content;
+  margin: auto 0;
+  z-index: 1;
+}
+
+.WelcomeSectionText {
+  grid-column: 1/12;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
+.WelcomeSectionImageContainer {
+  grid-column: 5/13;
+  grid-row: 1;
+  background-color: rgba(163, 179, 233, 0.2);
+  margin: auto 0;
+  border-radius: 4px;
+}
+
+.WelcomeSectionImage {
+  height: 400px;
+  opacity: 0.1;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.644);
+  clip-path: polygon(53% 0%, 100% 0%, 100% 100%, 47% 100%);
+}
+
+@media (max-width: 900px) {
+  .WelcomeSectionText {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .WelcomeSectionImageContainer {
+    grid-column: 4/13;
+  }
+}
+
+@media (max-width: 655px) {
+  .WelcomeSectionText {
+    font-size: 1.5rem;
+  }
+  .WelcomeSectionImage {
+    height: 300px;
+  }
+  .WelcomeSectionImageContainer {
+    grid-column: 2/13;
+  }
+}
+
+@media (max-width: 455px) {
+  .WelcomeSectionDescription {
+    grid-column-end: 13;
+  }
+  .WelcomeSectionImageContainer {
+    grid-column: 1/13;
+  }
+}

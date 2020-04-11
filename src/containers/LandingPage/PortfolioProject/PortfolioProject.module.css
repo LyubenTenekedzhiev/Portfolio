@@ -1,0 +1,129 @@
+.PortfolioProject {
+  display: flex;
+  justify-content: space-between;
+  max-height: 500px;
+  margin: 4rem 0;
+}
+.PortfolioProject:not(:first-of-type) {
+  margin-top: 10rem;
+}
+
+.PortfolioProjectDescription {
+  align-self: center;
+  width: 50ch;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+  transition: 0.7s all;
+}
+.PortfolioProjectDescription:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.PortfolioProjectDescriptionTitle {
+  font-weight: 600;
+}
+.PortfolioProjectDescriptionText {
+  font-weight: 400;
+}
+
+.PortfolioProjectFigure {
+  width: 60%;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.PortfolioProjectImage {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.PortfolioProjectImage:hover {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+@media (max-width: 1125px) {
+  .PortfolioProjectDescription {
+    width: 35ch;
+  }
+  .PortfolioProjectDescriptionTitle {
+    font-size: 1.4rem;
+  }
+  .PortfolioProjectDescriptionText {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 885px) {
+  .PortfolioProject{
+    flex-direction: column;
+  }
+  .PortfolioProjectFigure {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .PortfolioProject {
+    max-height: 600px;
+  }
+  .PortfolioProjectDescription {
+    width: 50ch;
+  }
+}
+@media (max-width: 600px) {
+  .PortfolioProjectDescription {
+    width: 35ch;
+    padding: 1.1rem;
+  }
+  .PortfolioProjectDescriptionTitle {
+    font-size: 1.2rem;
+  }
+  .PortfolioProjectDescriptionText {
+    font-size: .9rem;
+  }
+  .PortfolioProject:not(:first-of-type) {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 455px) {
+  .PortfolioProject {
+    margin-top: 2rem;
+  }
+  .PortfolioProjectDescription {
+    padding: .5rem;
+  }
+  .PortfolioProjectDescriptionTitle {
+    font-size: 1rem;
+  }
+  .PortfolioProjectDescriptionText {
+    font-size: .7rem;
+  }
+  .PortfolioProject:not(:first-of-type) {
+    margin-top: 4rem;
+  }
+  .PortfolioProjectFigure {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .PortfolioProject {
+    margin-top: 1.5rem;
+  }
+  .PortfolioProjectDescription {
+    width: 27ch;
+    padding: .5rem;
+  } 
+  .PortfolioProjectFigure {
+    margin-bottom: .75rem;
+  }
+}

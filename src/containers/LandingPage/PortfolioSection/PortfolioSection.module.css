@@ -1,0 +1,9 @@
+.PortfolioProjectWork {
+  font-weight: 600;
+}
+
+@media (max-width: 455px) {
+  .PortfolioProjectWork {
+    font-size: 1.4rem;
+  }
+}

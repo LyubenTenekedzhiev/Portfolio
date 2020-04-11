@@ -1,0 +1,30 @@
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 120px;
+}
+
+.FooterSocial {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20vw;
+  height: inherit;
+  align-content: center;
+}
+
+@media (max-width: 885px) {
+  .FooterSocial {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 475px) {
+  .Footer {
+    height: 50px;
+  }
+  .FooterSocial {
+    width: 45vw;
+  }
+}

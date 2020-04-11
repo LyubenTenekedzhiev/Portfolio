@@ -1,0 +1,13 @@
+@media (max-width: 755px) {
+  .MuiButtonBase-root {
+    font-size: 1.1rem !important;
+  } 
+}
+
+@media (max-width: 655px) {
+  .MuiButtonBase-root {
+    /* width: 10rem !important; */
+    font-size: .7rem !important;
+  } 
+}
+

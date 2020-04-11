@@ -1,0 +1,121 @@
+.AboutPage {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.AboutPageProfile {
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  grid-template-rows: auto;
+  margin: 6rem auto;
+}
+.AboutPageProfileDesc {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  grid-template-rows: auto;
+  margin: 6rem auto;
+}
+
+.AboutPageProfileInfo {
+  /* align-self: center; */
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row: 1;
+  grid-auto-rows: min-content;
+  margin: auto 0;
+  z-index: 1;
+}
+
+.AboutPageProfileText {
+  /* line-height: 4rem;
+  font-weight: 600; */
+  grid-column: 1/12;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
+.AboutPageProfileImageContainer {
+  background-color: rgba(163, 179, 233, 0.2);
+  margin: auto 0;
+  border-radius: 4px;
+  grid-column: 6/13;
+  grid-row: 1;
+  max-height: 400px;
+}
+
+.AboutPageProfileImage {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.AboutPageProfileDescription {
+  /* grid-column: 6/12;
+  grid-row: 1; */
+  text-align: start;
+  width: 37ch;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.AboutPageProfileDescription:not(:first-of-type) {
+  margin: 2rem auto;
+}
+
+@media (max-width: 1000px) {
+  .AboutPageProfileDescription {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .AboutPageProfileText {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .AboutPageProfileDesc {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .AboutPageProfileDescription {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .AboutPage {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 475px) {
+  .AboutPageProfileImageContainer {
+    grid-column: 4/13;
+    max-height: 600px;
+  }
+  .AboutPageProfileDescription {
+    line-height: 1.7rem;
+    font-size: 1rem;
+  }
+  .AboutPageProfileText {
+    font-size: 1.2rem;
+  }
+  .AboutPageProfileDescription:not(:first-of-type) {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 400px) {
+  .AboutPageProfileImageContainer {
+    grid-column: 2/13;
+  }
+  .AboutPageProfileText {
+    font-weight: 600;
+  }
+}
