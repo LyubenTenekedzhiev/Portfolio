@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CustomButton() {
+export default function CustomButton({ children }) {
   const classes = useStyles();
 
   return (
     <div>
       <Button variant='outlined' size='medium' color='primary' className={classes.root}>
-        Contact me
+        {children}
       </Button>
     </div>
   );

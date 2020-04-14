@@ -20,69 +20,15 @@ function Navigation() {
       window.removeEventListener("resize", updateWindowDimensions);
     };
   }, [updateWindowDimensions]);
-  
+
   return (
-    <div className={classes.Navigation}>
-      {window.location.href === "http://localhost:3000/calculator" ? (
-        <>
-          <NavLink className={classes.NavigationLink} to='/'>
-            Home
-          </NavLink>
-          <NavLink className={classes.NavigationLink} to='/burger'>
-            Burger Builder
-          </NavLink>
-        </>
-      ) : window.location.href === "http://localhost:3000/burger" ? (
-        <>
-          <NavLink className={classes.NavigationLink} to='/'>
-            Home
-          </NavLink>
-          <NavLink className={classes.NavigationLink} to='/movies'>
-            FooNetflixBar
-          </NavLink>
-        </>
-      ) : window.location.href === "http://localhost:3000/movies" ? (
-        <>
-          <NavLink className={classes.NavigationLink} to='/'>
-            Home
-          </NavLink>
-          <NavLink className={classes.NavigationLink} to='/pacman'>
-            Pacman
-          </NavLink>
-        </>
-      ) : window.location.href === "http://localhost:3000/pacman" ? (
-        <>
-          <NavLink className={classes.NavigationLink} to='/'>
-            Home
-          </NavLink>
-          <NavLink className={classes.NavigationLink} to='/coffee'>
-            Generic Hipster Coffee
-          </NavLink>
-        </>
-      ) : window.location.href === "http://localhost:3000/coffee" ? (
-        <>
-          <NavLink className={classes.NavigationLink} to='/'>
-            Home
-          </NavLink>
-          <NavLink className={classes.NavigationLink} to='/calculator'>
-            Carbon Footprint Calculator
-          </NavLink>
-        </>
-      ) : window.location.href === "http://localhost:3000/about" ? (
-        <>
-          <NavLink className={classes.NavigationLink} to='/'>
-            Home
-          </NavLink>
-          <NavLink className={classes.NavigationLink} to='/calculator'>
-            Contact
-          </NavLink>
-        </>
-      ) : screenWidth <= 485 ? (
+    <div className={classes.Navigation} id='home'>
+      {screenWidth <= 485 ? (
         <div className={classes.Navigation}>
           <NavLink className={classes.NavigationLink} to='/'>
             Lyuben Tenekedzhiev
           </NavLink>
-          <SideDrawer scrollToPortfolio={scrollToPortfolio} />
+          <SideDrawer />
         </div>
       ) : (
         <>
@@ -90,13 +36,20 @@ function Navigation() {
             Lyuben Tenekedzhiev
           </NavLink>
           <div className={classes.NavigationLinks}>
-            <p className={classes.NavigationLink} onClick={scrollToPortfolio}>
-              Portfolio
-            </p>
+            {window.location.href === "https://lyubentenekedzhiev.web.app/contact" ||
+            window.location.href === "https://lyubentenekedzhiev.web.app/about" ? (
+              <NavLink to='/' className={classes.NavigationLink}>
+                Portfolio
+              </NavLink>
+            ) : (
+              <p className={classes.NavigationLink} onClick={scrollToPortfolio}>
+                Portfolio
+              </p>
+            )}
             <NavLink className={classes.NavigationLink} to='/about'>
               About
             </NavLink>
-            <NavLink className={classes.NavigationLink} to='/home'>
+            <NavLink className={classes.NavigationLink} to='/contact'>
               Contact
             </NavLink>
           </div>

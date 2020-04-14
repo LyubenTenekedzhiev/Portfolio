@@ -1,11 +1,11 @@
 import React from "react";
 
 import classes from "./PortfolioSection.module.css";
-import CFCImage from "../../../assets/cfc.png";
+import CFCImage from "../../../assets/cfc.webp";
 import BurgerImage from "../../../assets/BurgerProject.PNG";
 import MoviesImage from "../../../assets/movies.png";
 import PacmanImage from "../../../assets/packman.png";
-import HipsterCafe from "../../../assets/Hipster.png";
+import HipsterCafe from "../../../assets/Hipster.webp";
 import PortfolioProject from "./../PortfolioProject/PortfolioProject";
 
 function PortfolioSection() {

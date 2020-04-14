@@ -1,5 +1,20 @@
+.PortfolioSection {
+  width: 90%;
+  margin: 6rem auto 0 auto;
+}
+
 .PortfolioProjectWork {
+  font-size: 3.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 1550px) {
+  .PortfolioProjectWork {
+    font-size: 2.5rem;
+  }
+  .PortfolioSection {
+    margin: 5rem auto 0 auto;
+  }
 }
 
 @media (max-width: 455px) {

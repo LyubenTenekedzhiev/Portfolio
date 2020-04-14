@@ -1,0 +1,104 @@
+.ContactPage {
+  /* width: 70vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.ContactPageImageFigure {
+  position: relative;
+  width: 70%;
+  margin: 0 auto 2.5rem auto;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.ContactPageImage {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.ContactPageImageCaption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgba(26, 26, 26, 0.747);
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  transition: 0.7s all;
+}
+/* .ContactPageImageFigure:hover,
+figure:hover figcaption {
+  background: rgb(0, 0, 0, .8);
+  visibility: visible;
+  opacity: 1;
+} */
+
+.ContactPageImageCaptionText {
+  font-weight: 600;
+  font-size: 7rem;
+}
+.ContactPageImageCaptionIcons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 6rem;
+}
+
+@media (max-width: 1800px) {
+  .ContactPageImageCaptionText {
+    font-size: 4rem;
+  }
+  .ContactPageImageCaptionIcons {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .ContactPageImageFigure {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .ContactPageImageCaptionText {
+    font-size: 3rem;
+  }
+  .ContactPageImageFigure {
+    width: 90%;
+  }
+}
+@media (max-width: 625px) {
+  .ContactPageImageCaptionText {
+    font-size: 2.5rem;
+  }
+  .ContactPage {
+    height: 100vh;
+  }
+  .ContactPageImageCaptionIcons {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .ContactPageImageCaptionText {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  .ContactPageImageCaptionText {
+    font-size: 1.6rem;
+  }
+  .ContactPageImageCaptionIcons {
+    font-size: 1.5rem;
+  }
+}

@@ -5,19 +5,24 @@
 }
 
 .FeaturedWorkTitle {
-  font-size: 2rem;
+  font-size: 4.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
+.FeaturedWorkSubTitle {
+  font-size: 3rem;
+}
+
 .FeaturedWorkStack {
-  padding: 1rem;
+  padding: 1.5rem;
   border-bottom: 1px solid black;
+  font-size: 2.3rem;
 }
 
 .FeaturedWorkImage {
   display: block;
-  max-height: 550px;
+  max-height: 1100px;
   width: 100%;
   margin: 2rem auto;
   border-radius: 3px;
@@ -27,9 +32,9 @@
 .FeaturedWorkDescription {
   text-align: start;
   width: 37ch;
-  line-height: 2.5rem;
-  margin: 4rem auto;
-  font-size: 1.5rem;
+  line-height: 6rem;
+  margin: 5rem auto;
+  font-size: 3.5rem;
 }
 
 .FeaturedWorkScreenshots {
@@ -44,35 +49,36 @@
 
 .FeaturedWorkProcessTitle {
   width: 70%;
-  margin: 0 auto;
-  font-size: 2rem;
+  margin: 5rem auto 0 auto;
+  font-size: 4rem;
 }
 .FeaturedWorkProcessText {
   width: 70%;
-  line-height: 2.3rem;
-  margin: 1rem auto 2rem auto;
-  font-size: 1.3rem;
+  line-height: 6rem;
+  margin: 2rem auto 5rem auto;
+  font-size: 3.5rem;
 }
 
 .FeaturedWorkProcess {
   text-align: start;
-  margin: 4rem auto;
+  margin: 6rem auto;
 }
 
 .FeaturedWorkNext {
   display: flex;
   justify-content: space-between;
-  height: 300px;
-  margin: 2rem auto;
+  height: 600px;
+  margin: 10rem auto;
 }
 .FeaturedWorkNextContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 .FeaturedWorkNextProject {
   display: block;
-  max-height: 200px;
+  max-height: 450px;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
@@ -89,13 +95,79 @@
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
 .FeaturedWorkNavigation {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 2100px) {
+  .FeaturedWorkNext {
+    height: 650px;
+  }
+  .FeaturedWorkNextProject {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .FeaturedWorkTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .FeaturedWorkSubTitle {
+    font-size: 1.3rem;
+  }
+
+  .FeaturedWorkStack {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .FeaturedWorkImage {
+    max-height: 550px;
+    margin: 2rem auto;
+  }
+  
+  .FeaturedWorkDescription {
+    width: 37ch;
+    line-height: 2.5rem;
+    margin: 4rem auto;
+    font-size: 1.5rem;
+  }
+  
+  .FeaturedWorkProcessTitle {
+    font-size: 2rem;
+  }
+  .FeaturedWorkProcessText {
+    line-height: 2.3rem;
+    margin: 1rem auto 2rem auto;
+    font-size: 1.3rem;
+  }
+  
+  .FeaturedWorkProcess {
+    margin: 4rem auto;
+  }
+  
+  .FeaturedWorkNext {
+    height: 300px;
+    margin: 2rem auto;
+  }
+  .FeaturedWorkNextProject {
+    max-height: 200px;
+  }
+  .FeaturedWorkNavigation {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
   .FeaturedWorkNextProject {
     max-height: 150px;
   }
+}
+
+@media (max-width: 900px) {
+
   .FeaturedWorkTitle,
   .FeaturedWorkProcessTitle {
     font-size: 1.6rem;
@@ -114,13 +186,22 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .FeaturedWorkNextProject {
     max-height: 100px;
   }
   .FeaturedWorkNext {
     max-height: 150px;
   }
+  .FeaturedWorkProcessTitle {
+    width: 90%;
+  }
+  .FeaturedWorkProcessText {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
   .FeaturedWorkTitle,
   .FeaturedWorkProcessTitle {
     font-size: 1.4rem;
@@ -151,6 +232,7 @@
     flex-direction: column;
     align-items: center;
     max-height: inherit;
+    margin-bottom: 6rem;
   }
   .FeaturedWorkNextProject {
     max-height: 130px;

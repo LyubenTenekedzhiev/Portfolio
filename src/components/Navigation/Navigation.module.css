@@ -2,21 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
-  width: 100%;
+  height: 140px;
+  width: 90vw;
+  margin: 0 auto;
+  animation: fadeIn 1s;
 }
 
 .NavigationLinks {
   display: flex;
   justify-content: space-between;
-  width: 35vw;
+  width: 40vw;
 }
 
 .NavigationLink {
   text-decoration: none;
   color: black;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 2.2rem;
   transition: 0.4s all;
   cursor: pointer;
 }
@@ -30,8 +32,29 @@
   color: black !important;
 }
 
+@media (max-width: 1550px) {
+  .Navigation {
+    height: 80px;
+  }
+  .NavigationLink {
+    font-size: 1.1rem;
+  }
+  .NavigationLinks {
+    width: 35vw;
+  }
+}
+
 @media (max-width: 585px) {
   .NavigationLinks {
     width: 50vw;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

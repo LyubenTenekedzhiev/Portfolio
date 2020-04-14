@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TemporaryDrawer({ scrollToPortfolio }) {
+export default function TemporaryDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -55,7 +55,7 @@ export default function TemporaryDrawer({ scrollToPortfolio }) {
         {["Portfolio", "About", "Contact"].map((text, index) => (
           <div key={index}>
             {text === "About" || text === "Contact" ? (
-              <NavLink to={`${text.toLowerCase()}`} style={{ textDecoration: "none", color: "black" }} >
+              <NavLink to={`${text.toLowerCase()}`} style={{ textDecoration: "none", color: "black" }}>
                 <ListItem button>
                   {text === "Contact" ? (
                     <ListItemIcon>
@@ -70,14 +70,16 @@ export default function TemporaryDrawer({ scrollToPortfolio }) {
                 </ListItem>
               </NavLink>
             ) : (
-              <div onClick={scrollToPortfolio}>
-                <ListItem button key={"Portfolio"}>
-                  <ListItemIcon>
-                    <WorkIcon />
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItem>
-              </div>
+              <NavLink to='/' style={{ textDecoration: "none", color: "black" }}>
+                <div>
+                  <ListItem button key={"Portfolio"}>
+                    <ListItemIcon>
+                      <WorkIcon />
+                    </ListItemIcon>
+                    <ListItemText primary={text} />
+                  </ListItem>
+                </div>
+              </NavLink>
             )}
           </div>
         ))}

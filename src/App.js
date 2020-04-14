@@ -9,6 +9,7 @@ import BurgerBuilder from "./containers/LandingPage/FeaturedWork/BurgerBuilder/B
 import Movies from "./containers/LandingPage/FeaturedWork/Movies/Movies";
 import Pacman from "./containers/LandingPage/FeaturedWork/Pacman/Pacman";
 import HipsterCoffee from "./containers/LandingPage/FeaturedWork/HipsterCoffee/HipsterCoffee";
+import ContactPage from './containers/ContactPage/ContactPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/movies' component={Movies} />
         <Route path='/pacman' component={Pacman} />
         <Route path='/coffee' component={HipsterCoffee} />
+        <Route path='/contact' component={ContactPage} />
         <Redirect from='/' to='/' />
       </Switch>
     </div>
