@@ -2,10 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "./AboutPage.module.css";
-import ProfileImage from "../../assets/lyuben-768x512.png";
 import Navigation from "./../../components/Navigation/Navigation";
 import Footer from "./../../components/Footer/Footer";
-import profilePic from "../../assets/profilePic.jpg";
 
 function AboutPage() {
   return (
@@ -18,7 +16,11 @@ function AboutPage() {
           <h1 className={classes.AboutPageProfileText}>Gamer.</h1>
         </div>
         <div className={classes.AboutPageProfileImageContainer}>
-          <img src={ProfileImage} alt={ProfileImage} className={classes.AboutPageProfileImage} />
+          <img
+            src='https://ik.imagekit.io/pyvwhvv76v/lyuben-768x512_t_M3rysyGPm.png'
+            alt='https://ik.imagekit.io/pyvwhvv76v/lyuben-768x512_t_M3rysyGPm.png'
+            className={classes.AboutPageProfileImage}
+          />
         </div>
       </div>
       <div className={classes.AboutPageProfileDesc}>
@@ -44,8 +46,12 @@ function AboutPage() {
         </div>
       </div>
       <div className={classes.AboutPageProfileDesc}>
-          <h2 className={classes.AboutPageProfileText}>Profile</h2>
-          <img src={profilePic} alt={profilePic} className={classes.AboutPageProfileImg} />
+        <h2 className={classes.AboutPageProfileText}>Profile</h2>
+        <img
+          src='https://ik.imagekit.io/pyvwhvv76v/profilePic_FPx_h9PQ0.jpg'
+          alt='https://ik.imagekit.io/pyvwhvv76v/profilePic_FPx_h9PQ0.jpg'
+          className={classes.AboutPageProfileImg}
+        />
         <div>
           <p className={classes.AboutPageProfileDescription}>
             I am a web developer and creator of digital products. Currently based in the great city of Prague, Czech Republic.

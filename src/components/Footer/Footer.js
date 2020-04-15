@@ -33,7 +33,7 @@ function Footer() {
     <div className={classes.Footer}>
       <h2 className={classes.FooterTitle}>Let me build the website you need!</h2>
       <div className={classes.FooterNav}>
-        {window.location.href !== "http://localhost:3000/" ? (
+        {window.location.href !== "https://lyubentenekedzhiev.web.app/" ? (
           <>
             <NavLink to='/' className={classes.FooterNavLink}>
               Home

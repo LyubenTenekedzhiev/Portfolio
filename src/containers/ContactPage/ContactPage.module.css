@@ -37,12 +37,6 @@
   color: rgb(255, 255, 255);
   transition: 0.7s all;
 }
-/* .ContactPageImageFigure:hover,
-figure:hover figcaption {
-  background: rgb(0, 0, 0, .8);
-  visibility: visible;
-  opacity: 1;
-} */
 
 .ContactPageImageCaptionText {
   font-weight: 600;
@@ -54,12 +48,21 @@ figure:hover figcaption {
   font-size: 6rem;
 }
 
+@media (max-width: 2000px) {
+  .ContactPage {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 1800px) {
   .ContactPageImageCaptionText {
     font-size: 4rem;
   }
   .ContactPageImageCaptionIcons {
     font-size: 3rem;
+  }
+  .ContactPage {
+    height: 100%;
   }
 }
 

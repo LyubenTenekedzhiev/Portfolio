@@ -4,7 +4,6 @@ import classes from "./ContactPage.module.css";
 
 import Navigation from "./../../components/Navigation/Navigation";
 import Footer from "./../../components/Footer/Footer";
-import contactPhoto from "../../assets/onthewayhome.png";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailIcon from "@material-ui/icons/Mail";
@@ -61,7 +60,11 @@ function ContactPage() {
       <Navigation />
       <p></p>
       <figure className={classes.ContactPageImageFigure}>
-        <img className={classes.ContactPageImage} src={contactPhoto} alt={contactPhoto} />
+        <img
+          className={classes.ContactPageImage}
+          src='https://ik.imagekit.io/pyvwhvv76v/onthewayhome_0hciMGkVc.png'
+          alt='https://ik.imagekit.io/pyvwhvv76v/onthewayhome_0hciMGkVc.png'
+        />
         <figcaption className={classes.ContactPageImageCaption}>
           <h1 className={classes.ContactPageImageCaptionText}>You can find me here</h1>
           <div className={classes.ContactPageImageCaptionIcons}>

@@ -1,36 +1,36 @@
 import React from "react";
 
 import classes from "./PortfolioSection.module.css";
-import CFCImage from "../../../assets/cfc.webp";
-import BurgerImage from "../../../assets/BurgerProject.PNG";
-import MoviesImage from "../../../assets/movies.png";
-import PacmanImage from "../../../assets/packman.png";
-import HipsterCafe from "../../../assets/Hipster.webp";
 import PortfolioProject from "./../PortfolioProject/PortfolioProject";
 
 function PortfolioSection() {
   const projects = [
     {
-      image: CFCImage,
+      image: "https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp",
       title: "Carbon Footprint Calculator",
       url: "calculator",
       description: "Let's estimate the emitted CO2 amount from your flights",
     },
     {
-      image: BurgerImage,
+      image: "https://ik.imagekit.io/pyvwhvv76v/BurgerProject_ASXPRr9vk.PNG",
       title: "Burger Builder",
       url: "burger",
       description: "Psst... Hungry? Did you know about the new burger place around the corner?",
     },
-    { image: MoviesImage, title: "FooNetflixBar", url: "movies", description: "The perfect copy of Netflix doesn't exi..." },
     {
-      image: PacmanImage,
+      image: "https://ik.imagekit.io/pyvwhvv76v/movies_mgTdbMr2K2.png",
+      title: "FooNetflixBar",
+      url: "movies",
+      description: "The perfect copy of Netflix doesn't exi...",
+    },
+    {
+      image: "https://ik.imagekit.io/pyvwhvv76v/packman_23_WvqNzQ1K.png",
       title: "Pacman",
       url: "pacman",
       description: "Follow me and experience the most relaxed version of the famous Pacman game",
     },
     {
-      image: HipsterCafe,
+      image: "https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp",
       title: "Generic Hipster Coffee",
       url: "coffee",
       description: "Are you a coffee lover? Look no further. Let's see what's on the menu!",

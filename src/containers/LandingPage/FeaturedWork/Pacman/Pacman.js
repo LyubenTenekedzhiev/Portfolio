@@ -2,13 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "../FeaturedWork.module.css";
-import introImage from "../../../../assets/pacman-intro.png";
 import Navigation from "./../../../../components/Navigation/Navigation";
 import Footer from "./../../../../components/Footer/Footer";
 import ScrollToTopOnMount from "./../../../../functions/ScrollToTopOnMount";
-
-import Movies from "../../../../assets/movies.png";
-import Hipster from "../../../../assets/Hipster.webp";
 
 function FooNetflixBar() {
   return (
@@ -18,7 +14,11 @@ function FooNetflixBar() {
       <div className={classes.FeaturedWork}>
         <h2 className={classes.FeaturedWorkTitle}>Pacman</h2>
         <h3 className={classes.FeaturedWorkSubTitle}>From "How the heck are we going to build this" to "We made it!"</h3>
-        <img className={classes.FeaturedWorkImage} src={introImage} alt={introImage} />
+        <img
+          className={classes.FeaturedWorkImage}
+          src='https://ik.imagekit.io/pyvwhvv76v/pacman-intro_uY0TT5Qr6.png'
+          alt='https://ik.imagekit.io/pyvwhvv76v/pacman-intro_uY0TT5Qr6.png'
+        />
         <h3 className={classes.FeaturedWorkStack}>
           Tech stack: <span style={{ paddingLeft: "10px" }}>JavaScript, SCSS, Gulp, Github</span>
         </h3>
@@ -33,7 +33,7 @@ function FooNetflixBar() {
             It was our fourth week into the bootcamp. After spending 12 days in the waters of JavaScript, it was time for our second
             hackathon. A game! Should I start panicking? Well, let's give it a try first and if we don't build a solid ground to stand on,
             we can ask for help or... panic. Once we read the instructions, implemented the game's stage and added pacman's head, things
-            started clicking for us! There was neither kinetic nor potential energy, responsible for moving the pacman around. Only logic! 8
+            started clicking for us! There was neither kinetic nor potential energy, responsible for pacman's movement. Only logic! 8
             hours later, we had our pacboy flying through the stage, eating apples and bumping into walls. Definitely my favourite
             hackathon!
           </p>
@@ -42,7 +42,11 @@ function FooNetflixBar() {
           <div className={classes.FeaturedWorkNextContainer}>
             <NavLink to='/movies'>
               <figure className={classes.FeaturedWorkNextFigure}>
-                <img className={classes.FeaturedWorkNextProject} src={Movies} alt={Movies} />
+                <img
+                  className={classes.FeaturedWorkNextProject}
+                  src='https://ik.imagekit.io/pyvwhvv76v/movies_mgTdbMr2K2.png'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/movies_mgTdbMr2K2.png'
+                />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Previous project</p>
@@ -51,7 +55,11 @@ function FooNetflixBar() {
           <div className={classes.FeaturedWorkNextContainer}>
             <NavLink to='/coffee'>
               <figure className={classes.FeaturedWorkNextFigure}>
-                <img className={classes.FeaturedWorkNextProject} src={Hipster} alt={Hipster} />
+                <img
+                  className={classes.FeaturedWorkNextProject}
+                  src='https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp'
+                />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Next project</p>

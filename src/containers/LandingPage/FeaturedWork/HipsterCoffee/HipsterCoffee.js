@@ -2,16 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "../FeaturedWork.module.css";
-import introImage from "../../../../assets/hipster-intro.png";
-import firstImg from "../../../../assets/hipster-mobile.png";
-import secondImg from "../../../../assets/hipster-mobile-coffee.png";
-import thirdImg from "../../../../assets/hipster-mobile-story.png";
 import Navigation from "../../../../components/Navigation/Navigation";
 import Footer from "../../../../components/Footer/Footer";
 import ScrollToTopOnMount from "../../../../functions/ScrollToTopOnMount";
-
-import Pacman from "../../../../assets/packman.png";
-import CarbonCalculator from "../../../../assets/cfc.webp";
 
 function FooNetflixBar() {
   return (
@@ -21,7 +14,11 @@ function FooNetflixBar() {
       <div className={classes.FeaturedWork}>
         <h2 className={classes.FeaturedWorkTitle}>Generic Hipster Coffee</h2>
         <h3 className={classes.FeaturedWorkSubTitle}>A nice and simple website, suitable for every small business</h3>
-        <img className={classes.FeaturedWorkImage} src={introImage} alt={introImage} />
+        <img
+          className={classes.FeaturedWorkImage}
+          src='https://ik.imagekit.io/pyvwhvv76v/hipster-intro_dW-VEG6bb_B.png'
+          alt='https://ik.imagekit.io/pyvwhvv76v/hipster-intro_dW-VEG6bb_B.png'
+        />
         <h3 className={classes.FeaturedWorkStack}>
           Tech stack: <span style={{ paddingLeft: "10px" }}>HTML, SCSS, Gulp, Github</span>
         </h3>
@@ -40,15 +37,31 @@ function FooNetflixBar() {
           . <br></br>Thankfully, many things changed ever since!
         </p>
         <div className={classes.FeaturedWorkScreenshots}>
-          <img className={classes.FeaturedWorkScreenshot} src={firstImg} alt="Calculator's landing page" />
-          <img className={classes.FeaturedWorkScreenshot} src={secondImg} alt="Calculator's search section" />
-          <img className={classes.FeaturedWorkScreenshot} src={thirdImg} alt="Calculator's offset section" />
+          <img
+            className={classes.FeaturedWorkScreenshot}
+            src='https://ik.imagekit.io/pyvwhvv76v/hipster-mobile_AqIepl8rj.png'
+            alt='https://ik.imagekit.io/pyvwhvv76v/hipster-mobile_AqIepl8rj.png'
+          />
+          <img
+            className={classes.FeaturedWorkScreenshot}
+            src='https://ik.imagekit.io/pyvwhvv76v/hipster-mobile-coffee_hKhAX85QL.png'
+            alt='https://ik.imagekit.io/pyvwhvv76v/hipster-mobile-coffee_hKhAX85QL.png'
+          />
+          <img
+            className={classes.FeaturedWorkScreenshot}
+            src='https://ik.imagekit.io/pyvwhvv76v/hipster-mobile-story_NFZ8yWtVu.png'
+            alt='https://ik.imagekit.io/pyvwhvv76v/hipster-mobile-story_NFZ8yWtVu.png'
+          />
         </div>
         <div className={classes.FeaturedWorkNext}>
           <div className={classes.FeaturedWorkNextContainer}>
             <NavLink to='/pacman'>
               <figure className={classes.FeaturedWorkNextFigure}>
-                <img className={classes.FeaturedWorkNextProject} src={Pacman} alt={Pacman} />
+                <img
+                  className={classes.FeaturedWorkNextProject}
+                  src='https://ik.imagekit.io/pyvwhvv76v/packman_23_WvqNzQ1K.png'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/packman_23_WvqNzQ1K.png'
+                />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Previous project</p>
@@ -59,8 +72,8 @@ function FooNetflixBar() {
               <figure className={`${classes.FeaturedWorkNextFigure} ${classes.FeaturedWorkNextFigureCarbon}`}>
                 <img
                   className={`${classes.FeaturedWorkNextProject} ${classes.FeaturedWorkNextProjectCarbon}`}
-                  src={CarbonCalculator}
-                  alt={CarbonCalculator}
+                  src='https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp'
                 />
               </figure>
             </NavLink>

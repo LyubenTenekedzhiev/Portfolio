@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./WelcomeSection.module.css";
 import Button from "../../../components/UI/Button/Button";
-import landingPageImg from "../../../assets/landingPage.webp";
 
 function WelcomeSection() {
   return (
@@ -16,7 +15,11 @@ function WelcomeSection() {
         </NavLink>
       </div>
       <div className={classes.WelcomeSectionImageContainer}>
-        <img src={landingPageImg} alt={landingPageImg} className={classes.WelcomeSectionImage} />
+        <img
+          src='https://ik.imagekit.io/pyvwhvv76v/landingPage_44d5hltKa.webp'
+          alt='https://ik.imagekit.io/pyvwhvv76v/landingPage_44d5hltKa.webp'
+          className={classes.WelcomeSectionImage}
+        />
       </div>
     </div>
   );

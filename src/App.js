@@ -1,28 +1,121 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
 import "./App.css";
 import LandingPage from "./containers/LandingPage/LandingPage";
-import AboutPage from "./containers/AboutPage/AboutPage";
-import CarbonCalculator from "./containers/LandingPage/FeaturedWork/CarbonCalculator/CarbonCalculator";
-import BurgerBuilder from "./containers/LandingPage/FeaturedWork/BurgerBuilder/BurgerBuilder";
-import Movies from "./containers/LandingPage/FeaturedWork/Movies/Movies";
-import Pacman from "./containers/LandingPage/FeaturedWork/Pacman/Pacman";
-import HipsterCoffee from "./containers/LandingPage/FeaturedWork/HipsterCoffee/HipsterCoffee";
-import ContactPage from './containers/ContactPage/ContactPage';
+import Spinner from "./components/UI/Spinner/Spinner";
+
+const AboutPage = React.lazy(() => import("./containers/AboutPage/AboutPage"));
+const CarbonCalculator = React.lazy(() => import("./containers/LandingPage/FeaturedWork/CarbonCalculator/CarbonCalculator"));
+const BurgerBuilder = React.lazy(() => import("./containers/LandingPage/FeaturedWork/BurgerBuilder/BurgerBuilder"));
+const Movies = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Movies/Movies"));
+const Pacman = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Pacman/Pacman"));
+const HipsterCoffee = React.lazy(() => import("./containers/LandingPage/FeaturedWork/HipsterCoffee/HipsterCoffee"));
+const ContactPage = React.lazy(() => import("./containers/ContactPage/ContactPage"));
 
 function App() {
   return (
     <div className='App'>
       <Switch>
         <Route path='/' exact component={LandingPage} />
-        <Route path='/about' component={AboutPage} />
-        <Route path='/calculator' component={CarbonCalculator} />
-        <Route path='/burger' component={BurgerBuilder} />
-        <Route path='/movies' component={Movies} />
-        <Route path='/pacman' component={Pacman} />
-        <Route path='/coffee' component={HipsterCoffee} />
-        <Route path='/contact' component={ContactPage} />
+        <Route
+          path='/about'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <AboutPage />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/calculator'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <CarbonCalculator />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/burger'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <BurgerBuilder />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/movies'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <Movies />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/pacman'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <Pacman />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/coffee'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <HipsterCoffee />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/contact'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <ContactPage />
+            </Suspense>
+          )}
+        />
         <Redirect from='/' to='/' />
       </Switch>
     </div>

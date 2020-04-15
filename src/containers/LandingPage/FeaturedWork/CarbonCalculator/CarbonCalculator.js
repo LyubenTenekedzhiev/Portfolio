@@ -2,16 +2,16 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "../FeaturedWork.module.css";
-import firstImg from "../../../../assets/calc-mobile.webp";
-import secondImg from "../../../../assets/calc-mobile-search.webp";
-import thirdImg from "../../../../assets/calc-mobile-offset.webp";
-import introImage from "../../../../assets/calculator-into.webp";
+// import firstImg from "../../../../assets/calc-mobile.webp";
+// import secondImg from "../../../../assets/calc-mobile-search.webp";
+// import thirdImg from "../../../../assets/calc-mobile-offset.webp";
+// import introImage from "../../../../assets/calculator-into.webp";
 import Navigation from "./../../../../components/Navigation/Navigation";
 import Footer from "./../../../../components/Footer/Footer";
 import ScrollToTopOnMount from "./../../../../functions/ScrollToTopOnMount";
 
-import Hipster from "../../../../assets/Hipster.webp";
-import BurgerBuilder from "../../../../assets/BurgerProject.PNG";
+// import Hipster from "../../../../assets/Hipster.webp";
+// import BurgerBuilder from "../../../../assets/BurgerProject.PNG";
 
 function CarbonCalculator() {
   return (
@@ -21,7 +21,11 @@ function CarbonCalculator() {
       <div className={classes.FeaturedWork}>
         <h2 className={classes.FeaturedWorkTitle}>Carbon Footprint Calculator</h2>
         <h3 className={classes.FeaturedWorkSubTitle}>Creating the UX/UI of my bootcamp's final project</h3>
-        <img className={classes.FeaturedWorkImage} src={introImage} alt={introImage} />
+        <img
+          className={classes.FeaturedWorkImage}
+          src='https://ik.imagekit.io/pyvwhvv76v/calculator-into_aqHU7hSCD.webp'
+          alt='https://ik.imagekit.io/pyvwhvv76v/calculator-into_aqHU7hSCD.webp'
+        />
         <h3 className={classes.FeaturedWorkStack}>
           Tech stack:{" "}
           <span style={{ paddingLeft: "10px" }}>React, JavaScript, Redux, CSS/SCSS, Material UI, Bootstrap, Laravel, MySQL, Github</span>
@@ -32,9 +36,21 @@ function CarbonCalculator() {
           flights’ carbon emissions, giving the user or organization the option of offsetting their footprint.
         </p>
         <div className={classes.FeaturedWorkScreenshots}>
-          <img className={classes.FeaturedWorkScreenshot} src={firstImg} alt="Calculator's landing page" />
-          <img className={classes.FeaturedWorkScreenshot} src={secondImg} alt="Calculator's search section" />
-          <img className={classes.FeaturedWorkScreenshot} src={thirdImg} alt="Calculator's offset section" />
+          <img
+            className={classes.FeaturedWorkScreenshot}
+            src='https://ik.imagekit.io/pyvwhvv76v/calc-mobile_bmy1VGKg2.webp'
+            alt="Calculator's landing page"
+          />
+          <img
+            className={classes.FeaturedWorkScreenshot}
+            src='https://ik.imagekit.io/pyvwhvv76v/calc-mobile-search_B6ZfobPpIHY.webp'
+            alt="Calculator's search section"
+          />
+          <img
+            className={classes.FeaturedWorkScreenshot}
+            src='https://ik.imagekit.io/pyvwhvv76v/calc-mobile-offset_SyzcvQXkrl.webp'
+            alt="Calculator's offset section"
+          />
         </div>
         <div className={classes.FeaturedWorkProcess}>
           <h3 className={classes.FeaturedWorkProcessTitle}>Process</h3>
@@ -50,7 +66,11 @@ function CarbonCalculator() {
           <div className={classes.FeaturedWorkNextContainer}>
             <NavLink to='/coffee'>
               <figure className={classes.FeaturedWorkNextFigure}>
-                <img className={classes.FeaturedWorkNextProject} src={Hipster} alt={Hipster} />
+                <img
+                  className={classes.FeaturedWorkNextProject}
+                  src='https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp'
+                />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Previous project</p>
@@ -59,7 +79,11 @@ function CarbonCalculator() {
           <div className={classes.FeaturedWorkNextContainer}>
             <NavLink to='/burger'>
               <figure className={classes.FeaturedWorkNextFigure}>
-                <img className={classes.FeaturedWorkNextProject} src={BurgerBuilder} alt={BurgerBuilder} />
+                <img
+                  className={classes.FeaturedWorkNextProject}
+                  src='https://ik.imagekit.io/pyvwhvv76v/BurgerProject_ASXPRr9vk.PNG'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/BurgerProject_ASXPRr9vk.PNG'
+                />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Next project</p>

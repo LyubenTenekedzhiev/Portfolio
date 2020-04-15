@@ -98,6 +98,25 @@
   font-size: 3rem;
 }
 
+@media (max-width: 2400px) {
+  .FeaturedWorkTitle {
+    font-size: 4rem;
+  }
+  .FeaturedWorkSubTitle {
+    font-size: 2.5rem;
+  }
+  .FeaturedWorkStack {
+    font-size: 2.5rem;
+  }
+  .FeaturedWorkDescription {
+    line-height: 5.75rem;
+    font-size: 3rem;
+  }
+  .FeaturedWorkProcessText {
+    line-height: 5.75rem;
+    font-size: 3rem;
+  }
+}
 
 @media (max-width: 2100px) {
   .FeaturedWorkNext {
@@ -108,7 +127,31 @@
   }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1900px) {
+  .FeaturedWorkTitle {
+    font-size: 3.5rem;
+  }
+  .FeaturedWorkSubTitle {
+    font-size: 2.4rem;
+  }
+  .FeaturedWorkStack {
+    font-size: 2.4rem;
+  }
+  .FeaturedWorkDescription {
+    line-height: 5.5rem;
+    font-size: 2.75rem;
+  }
+  .FeaturedWorkProcessTitle {
+    width: 80%;
+  }
+  .FeaturedWorkProcessText {
+    width: 80%;
+    line-height: 5.5rem;
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 1600px) {
   .FeaturedWorkTitle {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -122,32 +165,31 @@
     padding: 1rem;
     font-size: 1.3rem;
   }
-  
+
   .FeaturedWorkImage {
     max-height: 550px;
     margin: 2rem auto;
   }
-  
+
   .FeaturedWorkDescription {
     width: 37ch;
-    line-height: 2.5rem;
+    line-height: 3rem;
     margin: 4rem auto;
     font-size: 1.5rem;
   }
-  
   .FeaturedWorkProcessTitle {
     font-size: 2rem;
   }
   .FeaturedWorkProcessText {
-    line-height: 2.3rem;
+    line-height: 3rem;
     margin: 1rem auto 2rem auto;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
-  
+
   .FeaturedWorkProcess {
     margin: 4rem auto;
   }
-  
+
   .FeaturedWorkNext {
     height: 300px;
     margin: 2rem auto;
@@ -167,7 +209,6 @@
 }
 
 @media (max-width: 900px) {
-
   .FeaturedWorkTitle,
   .FeaturedWorkProcessTitle {
     font-size: 1.6rem;
@@ -225,6 +266,12 @@
   .FeaturedWorkNavigation {
     font-size: 1rem;
   }
+  .FeaturedWorkProcessTitle,
+  .FeaturedWorkProcessText,
+  .FeaturedWorkDescription {
+    width: 90%;
+  }
+  
 }
 
 @media (max-width: 550px) {
@@ -240,17 +287,12 @@
   .FeaturedWorkNextContainer:not(:first-of-type) {
     margin: 1.5rem auto;
   }
-  .FeaturedWorkProcessTitle,
-  .FeaturedWorkProcessText,
-  .FeaturedWorkDescription {
-    width: 90%;
+  .FeaturedWork {
+    width: 90vw;
   }
 }
 
 @media (max-width: 475px) {
-  .FeaturedWork {
-    width: 90vw;
-  }
   .FeaturedWorkNext {
     margin-bottom: 6rem;
   }
@@ -258,4 +300,3 @@
     max-height: 100px;
   }
 }
-

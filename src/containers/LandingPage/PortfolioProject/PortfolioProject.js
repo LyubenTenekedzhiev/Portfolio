@@ -17,13 +17,12 @@ function PortfolioProject({ image, title, description, url }) {
   return (
     <div className={classes.PortfolioProject} data-aos='fade-up' data-aos-anchor-placement='center-bottom'>
       <figure className={classes.PortfolioProjectFigure}>
-        <img className={classes.PortfolioProjectImage} src={image} alt={title} srcSet />
+        <img className={classes.PortfolioProjectImage} src={image} alt={title} />
       </figure>{" "}
       <div className={classes.PortfolioProjectDescription}>
         <h1 className={classes.PortfolioProjectDescriptionTitle}>{title}</h1>
         <h3 className={classes.PortfolioProjectDescriptionText}>
           {description}
-          {/* <ArrowRightAltIcon style={{ fontSize: "2rem", verticalAlign: "middle", transform: "translateX(6px)" }} /> */}
         </h3>
         <NavLink to={{ pathname: "/" + url }} style={{ textDecoration: "none" }}>
           <Button>See more</Button>

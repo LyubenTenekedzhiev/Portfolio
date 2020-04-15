@@ -38,7 +38,7 @@ export default function MouseOverPopover({ anchorEl, closed, content }) {
         onClose={closed}
         disableRestoreFocus
       >
-        <p className={styles.Popover}>Click to copy my {content}.</p>
+        <p className={styles.Popover}>Copy my {content}.</p>
       </Popover>
     </div>
   );

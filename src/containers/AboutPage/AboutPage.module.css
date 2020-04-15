@@ -100,6 +100,39 @@ ul {
   }
 }
 
+
+@media (max-width: 2100px) {
+  .AboutPageProfileImg {
+    grid-column: 1/12;
+  }
+}
+
+@media (max-width: 1900px) {
+  .AboutPageProfileImg {
+    max-height: 1000px;
+  }
+  .AboutPageProfileDescription {
+    width: 35ch;
+    line-height: 4.5rem;
+    font-size: 2rem;
+  }
+  .AboutPageProfileText {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1620px) {
+  .AboutPageProfileImg {
+    max-height: 950px;
+  }
+  .AboutPageProfileDescription {
+    width: 35ch;
+    line-height: 4.3rem;
+    font-size: 1.8rem;
+  }
+}
+
+
 @media (max-width: 1550px) {
   .AboutPageProfileText {
     font-size: 2rem;
@@ -128,7 +161,7 @@ ul {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .AboutPageProfileImg {
     grid-column: 1/12;
   }
@@ -145,16 +178,6 @@ ul {
   .AboutPageProfileText {
     font-size: 1.3rem;
   }
-}
-
-@media (max-width: 1000px) {
-  /* .AboutPageProfileDescription {
-    line-height: 2rem;
-    font-size: 1.2rem;
-  }
-  .AboutPageProfileText {
-    font-size: 1.3rem;
-  } */
 }
 
 @media (max-width: 900px) {
