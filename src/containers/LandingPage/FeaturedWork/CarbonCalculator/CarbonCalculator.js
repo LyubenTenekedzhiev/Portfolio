@@ -64,17 +64,17 @@ function CarbonCalculator() {
         </div>
         <div className={classes.FeaturedWorkNext}>
           <div className={classes.FeaturedWorkNextContainer}>
-            <NavLink to='/coffee'>
+            <NavLink to='/books'>
               <figure className={classes.FeaturedWorkNextFigure}>
                 <img
                   className={classes.FeaturedWorkNextProject}
-                  src='https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp'
-                  alt='https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp'
+                  src='https://ik.imagekit.io/pyvwhvv76v/GraphQL-small_ZK3_Cs1WN.png'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/GraphQL-small_ZK3_Cs1WN.png'
                 />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Previous project</p>
-            <h3 className={classes.FeaturedWorkSubTitle}>Archived Personal Portfolio</h3>
+            <h3 className={classes.FeaturedWorkSubTitle}>A simple bookstore</h3>
           </div>
           <div className={classes.FeaturedWorkNextContainer}>
             <NavLink to='/burger'>

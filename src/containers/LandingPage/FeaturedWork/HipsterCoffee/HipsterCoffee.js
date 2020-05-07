@@ -68,17 +68,17 @@ function FooNetflixBar() {
             <h3 className={classes.FeaturedWorkSubTitle}>Pacman</h3>
           </div>
           <div className={classes.FeaturedWorkNextContainer}>
-            <NavLink to='/calculator'>
+            <NavLink to='/books'>
               <figure className={`${classes.FeaturedWorkNextFigure} ${classes.FeaturedWorkNextFigureCarbon}`}>
                 <img
                   className={`${classes.FeaturedWorkNextProject} ${classes.FeaturedWorkNextProjectCarbon}`}
-                  src='https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp'
-                  alt='https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp'
+                  src='https://ik.imagekit.io/pyvwhvv76v/GraphQL-small_ZK3_Cs1WN.png'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/GraphQL-small_ZK3_Cs1WN.png'
                 />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Next project</p>
-            <h3 className={classes.FeaturedWorkSubTitle}>Carbon Footprint Calculator</h3>
+            <h3 className={classes.FeaturedWorkSubTitle}>A simple bookstore</h3>
           </div>
         </div>
       </div>

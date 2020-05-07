@@ -9,7 +9,7 @@ function PortfolioSection() {
       image: "https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp",
       title: "Carbon Footprint Calculator",
       url: "calculator",
-      description: "Let's estimate the emitted CO2 amount from your flights",
+      description: "Let's estimate the emitted CO2 amount from your flights.",
     },
     {
       image: "https://ik.imagekit.io/pyvwhvv76v/BurgerProject_ASXPRr9vk.PNG",
@@ -27,13 +27,19 @@ function PortfolioSection() {
       image: "https://ik.imagekit.io/pyvwhvv76v/packman_23_WvqNzQ1K.png",
       title: "Pacman",
       url: "pacman",
-      description: "Follow me and experience the most relaxed version of the famous Pacman game",
+      description: "Follow me and experience the most relaxed version of the famous Pacman game.",
     },
     {
       image: "https://ik.imagekit.io/pyvwhvv76v/Hipster_Pl9p6PJ6B.webp",
       title: "Generic Hipster Coffee",
       url: "coffee",
       description: "Are you a coffee lover? Look no further. Let's see what's on the menu!",
+    },
+    {
+      image: "https://ik.imagekit.io/pyvwhvv76v/GraphQL_jC3Bjei4N.png",
+      title: "A simple bookstore",
+      url: "books",
+      description: "Amazon's book section seems too vast? Come and check out my bookstore then.",
     },
   ];
 

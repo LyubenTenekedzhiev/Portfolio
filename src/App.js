@@ -11,6 +11,7 @@ const BurgerBuilder = React.lazy(() => import("./containers/LandingPage/Featured
 const Movies = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Movies/Movies"));
 const Pacman = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Pacman/Pacman"));
 const HipsterCoffee = React.lazy(() => import("./containers/LandingPage/FeaturedWork/HipsterCoffee/HipsterCoffee"));
+const Bookstore = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Bookstore/Bookstore"));
 const ContactPage = React.lazy(() => import("./containers/ContactPage/ContactPage"));
 
 function App() {
@@ -99,6 +100,20 @@ function App() {
               }
             >
               <HipsterCoffee />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/books'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <Bookstore />
             </Suspense>
           )}
         />

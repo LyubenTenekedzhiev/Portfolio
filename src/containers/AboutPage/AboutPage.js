@@ -27,15 +27,16 @@ function AboutPage() {
         <h2 className={classes.AboutPageProfileText}>Technology stack</h2>
         <div className={classes.AboutPageProfileSkills}>
           <ul className={classes.AboutPageProfileDescription}>
+            <li>JavaScript - mainly ES6</li>
             <li>React</li>
-            <li>ES6</li>
             <li>Laravel (limited)</li>
             <li>Redux</li>
+            <li>Node & Express & Socket.io (limited)</li>
             <li>HTML5 / CSS3</li>
             <li>Sass</li>
             <li>Material UI / Bootstrap</li>
-            <li>REST APIs</li>
-            <li>MySQL (limited) / Firebase</li>
+            <li>REST APIs / GraphQL</li>
+            <li>MySQL & MongoDB (limited) / Firebase</li>
             <li>Version Control ( GIT )</li>
             <li>npm / yarn</li>
             <li>Gulp</li>
