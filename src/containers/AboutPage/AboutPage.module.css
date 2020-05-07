@@ -221,12 +221,15 @@ ul {
 }
 @media (max-width: 400px) {
   .AboutPageProfileImageContainer {
-    grid-column: 2/13;
+    grid-column: 1/13;
   }
   .AboutPageProfileText {
     font-weight: 600;
   }
   .AboutPageProfileImg {
-    max-height: 150px;
+    max-height: 130px;
+  }
+  .AboutPageProfileInfo {
+    grid-column-end: 12;
   }
 }
