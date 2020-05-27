@@ -6,7 +6,7 @@ import Navigation from "../../../../components/Navigation/Navigation";
 import Footer from "../../../../components/Footer/Footer";
 import ScrollToTopOnMount from "../../../../functions/ScrollToTopOnMount";
 
-function FooNetflixBar() {
+function HipsterCoffee() {
   return (
     <>
       <ScrollToTopOnMount />
@@ -87,4 +87,4 @@ function FooNetflixBar() {
   );
 }
 
-export default FooNetflixBar;
+export default HipsterCoffee;

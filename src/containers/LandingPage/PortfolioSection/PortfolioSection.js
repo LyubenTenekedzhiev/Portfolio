@@ -12,6 +12,12 @@ function PortfolioSection() {
       description: "Let's estimate the emitted CO2 amount from your flights.",
     },
     {
+      image: "https://ik.imagekit.io/pyvwhvv76v/notescatcher_YK0_U2-9la-.png",
+      title: "NotesCatcher",
+      url: "notes",
+      description: "Give your routine a better structure with this to-do app.",
+    },
+    {
       image: "https://ik.imagekit.io/pyvwhvv76v/BurgerProject_ASXPRr9vk.PNG",
       title: "Burger Builder",
       url: "burger",

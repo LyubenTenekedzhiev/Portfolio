@@ -2,18 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "../FeaturedWork.module.css";
-// import firstImg from "../../../../assets/burger-mobile-modal.webp";
-// import secondImg from "../../../../assets/burger-mobile-auth.webp";
-// import thirdImg from "../../../../assets/burger-mobile-orders.webp";
-// import introImage from "../../../../assets/burger-intro.webp";
 import Navigation from "./../../../../components/Navigation/Navigation";
 import Footer from "./../../../../components/Footer/Footer";
 import ScrollToTopOnMount from "./../../../../functions/ScrollToTopOnMount";
 
-// import CarbonCalc from "../../../../assets/cfc.webp";
-// import Movies from "../../../../assets/movies.png";
 
-function CarbonCalculator() {
+function BurgerBuilder() {
   return (
     <>
       <ScrollToTopOnMount />
@@ -63,17 +57,17 @@ function CarbonCalculator() {
         </div>
         <div className={classes.FeaturedWorkNext}>
           <div className={classes.FeaturedWorkNextContainer}>
-            <NavLink to='/calculator'>
+            <NavLink to='/notes'>
               <figure className={classes.FeaturedWorkNextFigure}>
                 <img
                   className={classes.FeaturedWorkNextProject}
-                  src='https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp'
-                  alt='https://ik.imagekit.io/pyvwhvv76v/cfc_lfKc5ZZz7.webp'
+                  src='https://ik.imagekit.io/pyvwhvv76v/profileNotes_Azuw76HHs.png'
+                  alt='https://ik.imagekit.io/pyvwhvv76v/profileNotes_Azuw76HHs.png'
                 />
               </figure>
             </NavLink>
             <p className={classes.FeaturedWorkNavigation}>Previous project</p>
-            <h3 className={classes.FeaturedWorkSubTitle}>Carbon Footprint Calculator</h3>
+            <h3 className={classes.FeaturedWorkSubTitle}>NotesCatcher</h3>
           </div>
           <div className={classes.FeaturedWorkNextContainer}>
             <NavLink to='/movies'>
@@ -95,4 +89,4 @@ function CarbonCalculator() {
   );
 }
 
-export default CarbonCalculator;
+export default BurgerBuilder;

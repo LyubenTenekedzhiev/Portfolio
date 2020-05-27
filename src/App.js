@@ -10,6 +10,7 @@ const CarbonCalculator = React.lazy(() => import("./containers/LandingPage/Featu
 const BurgerBuilder = React.lazy(() => import("./containers/LandingPage/FeaturedWork/BurgerBuilder/BurgerBuilder"));
 const Movies = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Movies/Movies"));
 const Pacman = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Pacman/Pacman"));
+const NotesCatcher = React.lazy(() => import("./containers/LandingPage/FeaturedWork/NotesCatcher/NotesCatcher"));
 const HipsterCoffee = React.lazy(() => import("./containers/LandingPage/FeaturedWork/HipsterCoffee/HipsterCoffee"));
 const Bookstore = React.lazy(() => import("./containers/LandingPage/FeaturedWork/Bookstore/Bookstore"));
 const ContactPage = React.lazy(() => import("./containers/ContactPage/ContactPage"));
@@ -86,6 +87,20 @@ function App() {
               }
             >
               <Pacman />
+            </Suspense>
+          )}
+        />
+        <Route
+          path='/notes'
+          render={() => (
+            <Suspense
+              fallback={
+                <div style={{ textAlign: "center" }}>
+                  <Spinner />
+                </div>
+              }
+            >
+              <NotesCatcher />
             </Suspense>
           )}
         />
